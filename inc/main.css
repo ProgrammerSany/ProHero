@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeSpeed;
+}
+/* Root functions start */
+:root {
+    /* Header and Background Colors */
+    --header-bg-color: #fff;
+    --bg-color-zero: #F7F8FA;
+    --footer-bg-color: #1E1C27;
+    /* Text Colors */
+    --txt-color-zero: #34315C;
+    --txt-color-one: #FF284F;
+    --txt-color-two: #333;
+    --txt-color-three: #fff;
+    /* Button Colors */
+    --button-color-zero: #45C881;
+    /* Heights */
+    --header-height: 55px;
+    --header-line-height: 55px;
+}
+/* Root functions end */
+
+
+/* Common styles start */
+a {
+    text-decoration: none;
+}
+.hd-box {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Common styles end */
