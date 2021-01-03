@@ -4,16 +4,24 @@
     box-sizing: border-box;
     text-rendering: optimizeSpeed;
 }
+body {
+    margin: var(--header-height) 0 0 0;
+}
+
 /* Root functions start */
 :root {
     /* Header and Background Colors */
-    --header-bg-color: #fff;
+    --header-bg-color: #232729;
+    --header-bg-hover-color: #1d1f20;
     --bg-color-zero: #F7F8FA;
+    --bg-shdw: 0 2px 10px #efefef;
+    --full-width: 100%;
     /* Text Colors */
     --txt-color-zero: #34315C;
     --txt-color-one: #FF284F;
     --txt-color-two: #333;
     --txt-color-three: #fff;
+    --text-hover-color: #FAFAFA;
     /* Button Colors */
     --button-color-zero: #45C881;
     /* Heights */
@@ -21,6 +29,8 @@
     --header-line-height: 55px;
     /* Footer and Background Colors */
     --footer-bg-color: #1E1C27;
+    /* Margin Styles */
+    --margin-top: 2px;
 }
 /* Root functions end */
 
@@ -40,9 +50,14 @@ ul {
 
 /* Header styles start */
 .header {
-    background: var(--button-color-zero);
+    background: var(--header-bg-color);
     height: var(--header-height);
     line-height: var(--header-line-height);
+    box-shadow: var(--bg-shdw);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--full-width);
 }
 .pro-logo {
     float: left;
@@ -60,7 +75,22 @@ ul {
 }
 .pro-menu ul li a {
     padding: 0 15px;
+    height: 53px;
+    font-size: 15px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: var(--txt-color-three);
+    margin-top: var(--margin-top);
 }
-.pro-menu ul li a:hover {}
+.pro-menu ul li a:hover {
+    background: var(--header-bg-hover-color);
+}
 .pro-buttons {}
 .pro-buttons>button {}
+
+
+/* Custom fonts start */
+@font-face {
+    font-family: bangla-one;
+    src: url(fonts/SolaimanLipi.ttf);
+}
+/* Custom fonts end */
