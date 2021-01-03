@@ -9,7 +9,6 @@
     /* Header and Background Colors */
     --header-bg-color: #fff;
     --bg-color-zero: #F7F8FA;
-    --footer-bg-color: #1E1C27;
     /* Text Colors */
     --txt-color-zero: #34315C;
     --txt-color-one: #FF284F;
@@ -20,6 +19,8 @@
     /* Heights */
     --header-height: 55px;
     --header-line-height: 55px;
+    /* Footer and Background Colors */
+    --footer-bg-color: #1E1C27;
 }
 /* Root functions end */
 
@@ -32,4 +33,34 @@ a {
     max-width: 1200px;
     margin: 0 auto;
 }
+ul {
+    list-style: none;
+}
 /* Common styles end */
+
+/* Header styles start */
+.header {
+    background: var(--button-color-zero);
+    height: var(--header-height);
+    line-height: var(--header-line-height);
+}
+.pro-logo {
+    float: left;
+}
+.pro-logo a {}
+.pro-logo a:hover {}
+.pro-menu {
+    float: left;
+}
+.pro-menu ul {
+    display: flex;
+}
+.pro-menu ul li {
+    display: flex;
+}
+.pro-menu ul li a {
+    padding: 0 15px;
+}
+.pro-menu ul li a:hover {}
+.pro-buttons {}
+.pro-buttons>button {}
