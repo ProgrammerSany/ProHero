@@ -85,7 +85,28 @@ ul {
     background: var(--header-bg-hover-color);
 }
 .pro-buttons {}
-.pro-buttons>button {}
+.pro-buttons>button {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 15px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.pro-buttons #login-button {
+    background: rgba(255, 40, 79, 1);
+}
+.pro-buttons #login-button:hover {
+    background: rgba(255, 40, 79, .6)
+}
+.pro-buttons #theme-button {
+    background: rgba(69, 200, 129, 1);
+}
+.pro-buttons #theme-button:hover {
+    background: rgba(69, 200, 129, .6);
+}
 
 
 /* Custom fonts start */
