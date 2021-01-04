@@ -69,8 +69,8 @@ ul {
 .logo {
     background: url(../images/logo.svg);
     float: left;
-    width: 140px;
-    height: 32px;
+    width: 110px;
+    height: 26px;
     background-repeat: no-repeat;
 }
 .logo:hover {}
