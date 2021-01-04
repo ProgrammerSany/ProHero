@@ -61,9 +61,19 @@ ul {
 }
 .pro-logo {
     float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
 }
-.pro-logo a {}
-.pro-logo a:hover {}
+.logo {
+    background: url(../images/logo.svg);
+    float: left;
+    width: 140px;
+    height: 32px;
+    background-repeat: no-repeat;
+}
+.logo:hover {}
 .pro-menu {
     float: left;
 }
